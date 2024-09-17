@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pun Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #pun-display {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        button {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Random Pun Generator</h1>
+        <p id="pun-display"></p>
+        <button onclick="displayRandomPun()">Generate New Pun</button>
+    </div>
+
+    <script>
+        const puns = [
+            "I'm reading a book on anti-gravity. It's impossible to put down!",
+            "Did you hear about the claustrophobic astronaut? He just needed a little space.",
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "Why did the scarecrow win an award? He was outstanding in his field.",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "I would tell you a chemistry joke, but I know I wouldn't get a reaction.",
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "What do you call a fake noodle? An impasta!",
+            "Why did the math book look so sad? Because it had too many problems.",
+            "What do you call a bear with no teeth? A gummy bear!",
+            "Why did the bicycle fall over? Because it was two-tired!",
+            "How do you organize a space party? You planet!",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "What do you call a can opener that doesn't work? A can't opener!",
+            "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+            "What do you call a sleeping bull? A bulldozer!",
+            "Why did the scarecrow become a successful politician? He was outstanding in his field!",
+            "What do you call a fake stone in Ireland? A sham rock!",
+            "Why don't oysters donate to charity? Because they're shellfish!",
+            "What do you call a parade of rabbits hopping backwards? A receding hare-line!",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "What do you call a boomerang that doesn't come back? A stick!",
+            "Why did the cookie go to the doctor? Because it was feeling crumbly!",
+            "What do you call a bear with no ears? B!",
+            "Why did the coffee file a police report? It got mugged!",
+            "What do you call a fake noodle? An impasta!",
+            "Why did the scarecrow become a successful motivational speaker? He was outstanding in his field!",
+            "What do you call a can opener that doesn't work? A can't opener!",
+            "Why did the math book look so sad? Because it had too many problems.",
+            "What do you call a bear with no teeth? A gummy bear!",
+            "Why did the bicycle fall over? Because it was two-tired!",
+            "How do you organize a space party? You planet!",
+            "What do you call a sleeping bull? A bulldozer!",
+            "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+            "What do you call a fake stone in Ireland? A sham rock!",
+            "Why don't oysters donate to charity? Because they're shellfish!",
+            "What do you call a parade of rabbits hopping backwards? A receding hare-line!",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "What do you call a boomerang that doesn't come back? A stick!",
+            "Why did the cookie go to the doctor? Because it was feeling crumbly!",
+            "What do you call a bear with no ears? B!",
+            "Why did the coffee file a police report? It got mugged!",
+            "What do you call a fake noodle? An impasta!",
+            "Why did the scarecrow become a successful motivational speaker? He was outstanding in his field!",
+            "What do you call a can opener that doesn't work? A can't opener!",
+            "Why did the math book look so sad? Because it had too many problems.",
+            "What do you call a bear with no teeth? A gummy bear!",
+            "Why did the bicycle fall over? Because it was two-tired!",
+            "How do you organize a space party? You planet!",
+            "What do you call a sleeping bull? A bulldozer!"
+        ];
+
+        function displayRandomPun() {
+            const randomIndex = Math.floor(Math.random() * puns.length);
+            document.getElementById('pun-display').textContent = puns[randomIndex];
+        }
+
+        // Display a random pun when the page loads
+        displayRandomPun();
+    </script>
+</body>
+
+</html>
